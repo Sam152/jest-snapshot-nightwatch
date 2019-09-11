@@ -1,16 +1,16 @@
 const jestSnapshot = require('jest-snapshot');
 const path = require('path');
 
-let snapshotPath = [path.dirname(module.parent.id), '__snapshots__', path.basename(module.parent.id) + '.snap'].join('/');
-const snapshotState = new jestSnapshot.SnapshotState(snapshotPath, {
-  updateSnapshot: process.env.SNAPSHOT_UPDATE ? 'all' : 'new',
-});
-
 /**
  * A jest snapshot matcher setup with context from a running nightwatch test.
  */
-function toMatchSnapshot(actual) {
+function toMatchSnapshot(testModule) {
+  let snapshotPath = [path.dirname(module.parent.id), '__snapshots__', path.basename(module.parent.id) + '.snap'].join('/');
   let testName = module.parent.exports.client.currentTest.name;
+
+  const snapshotState = new jestSnapshot.SnapshotState(snapshotPath, {
+    updateSnapshot: process.env.SNAPSHOT_UPDATE ? 'all' : 'new',
+  });
 
   const matcher = jestSnapshot.toMatchSnapshot.bind({
     snapshotState,
@@ -18,6 +18,8 @@ function toMatchSnapshot(actual) {
   });
   const result = matcher(actual);
   snapshotState.save();
+
+
   return result;
 }
 

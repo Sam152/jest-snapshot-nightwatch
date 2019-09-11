@@ -1,7 +1,7 @@
 const expect = require('expect');
 const toMatchSnapshot = require('../index');
 
-expect.extend({toMatchSnapshot});
+expect.extend({toMatchSnapshot: toMatchSnapshot(module)});
 
 module.exports = {
   '@unitTest': true,
