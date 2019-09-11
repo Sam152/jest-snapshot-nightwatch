@@ -16,3 +16,17 @@ module.exports = {
 };
 
 ```  
+
+Run your tests like normal to create new snapshots or assert existing ones:
+
+```
+npm run test
+```
+
+Run with the `SNAPSHOT_UPDATE` environment variable set to update snapshots to the latest version:
+
+```
+SNAPSHOT_UPDATE=1 npm run test
+```
+
+More information on snapshot testing from the [jest documentation](https://jestjs.io/docs/en/snapshot-testing).
