@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test using snapshots 1`] = `"passing snapshot"`;
+
+exports[`Test using snapshots 2`] = `"second passing snapshot"`;
+
+exports[`Test using snapshots 3`] = `"foo"`;
+
+exports[`Test using snapshots 4`] = `"bar"`;

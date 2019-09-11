@@ -4,11 +4,12 @@
   "description": "Integration of jest-snapshot into the nightwatch test runner.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nightwatch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "expect": "^24.9.0",
     "jest-snapshot": "^24.9.0",
     "nightwatch": "^1.2.2"
   }

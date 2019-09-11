@@ -1,0 +1,8 @@
+{
+  "src_folders": ["tests"],
+  "test_settings": {
+    "default": {
+      "filter" : "*.test.js"
+    }
+  }
+}
