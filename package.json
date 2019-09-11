@@ -1,6 +1,6 @@
 {
   "name": "jest-snapshot-nightwatch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Integration of jest-snapshot into the nightwatch test runner.",
   "main": "index.js",
   "scripts": {
