@@ -12,5 +12,9 @@
     "expect": "^24.9.0",
     "jest-snapshot": "^24.9.0",
     "nightwatch": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam152/jest-snapshot-nightwatch.git"
   }
 }
