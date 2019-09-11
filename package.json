@@ -7,5 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest-snapshot": "^24.9.0",
+    "nightwatch": "^1.2.2"
+  }
 }
