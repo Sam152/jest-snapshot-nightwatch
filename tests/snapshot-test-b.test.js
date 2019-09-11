@@ -8,5 +8,6 @@ module.exports = {
   'Second test using snapshots': function () {
     expect('foo').toMatchSnapshot();
     expect('bar').toMatchSnapshot();
+    expect('NOT baz').not.toMatchSnapshot();
   },
 };

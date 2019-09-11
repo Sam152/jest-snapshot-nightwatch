@@ -3,3 +3,5 @@
 exports[`Second test using snapshots 1`] = `"foo"`;
 
 exports[`Second test using snapshots 2`] = `"bar"`;
+
+exports[`Second test using snapshots 3`] = `"baz"`;
